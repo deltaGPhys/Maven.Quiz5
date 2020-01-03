@@ -75,6 +75,8 @@ public class GenericUtils<T> {
         }
 
         return sets;
+        // this solution is obv trash, but it works with small sizes. Really, a recursive approach would be better.
+        // also, this isn't a power set (order doesn't matter in sets), and the answers disagree with the provided link
     }
 
     public static <T extends Comparable> Iterable<? extends Iterable<T>> powerSet(T... originalSet) {
