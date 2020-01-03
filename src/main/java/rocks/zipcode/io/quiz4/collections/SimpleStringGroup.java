@@ -49,10 +49,10 @@ public class SimpleStringGroup implements Iterable{
 
     @Override
     public void forEach(Consumer action) {
-        Objects.requireNonNull(action);
-        for (String t : this) {
-            action.accept(t);
-        }
+//        Objects.requireNonNull(action);
+//        for (String t : this) {
+//            action.accept(t);
+//        }
 
     }
 
