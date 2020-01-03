@@ -7,7 +7,7 @@ import java.util.Iterator;
 /**
  * @author leon on 18/12/2018.
  */
-public class Group<T> {
+public class Group<T> implements Iterable<T>, GroupInterface<T>{
 
     ArrayList<T> items = new ArrayList<>();
 
@@ -43,5 +43,10 @@ public class Group<T> {
 
     public Iterator<T> iterator() {
         return this.items.iterator();
+    }
+
+    @Override
+    public String toString() {
+        return ""+items;
     }
 }
